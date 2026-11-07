@@ -72,7 +72,7 @@ const EventOrganisasi = () => {
                             type="button"
                             onClick={() => scrollByCard(-1)}
                             aria-label="Geser kiri"
-                            className="flex h-9 w-9 items-center justify-center rounded-full border border-[#2b211d]/10 bg-[#f2e7d8] text-lg text-[#201813]"
+                            className="flex h-8 w-8 items-center justify-center rounded-full border border-[#2b211d]/10 bg-[#f2e7d8] text-base text-[#201813] sm:h-9 sm:w-9"
                         >
                             ←
                         </button>
@@ -80,7 +80,7 @@ const EventOrganisasi = () => {
                             type="button"
                             onClick={() => scrollByCard(1)}
                             aria-label="Geser kanan"
-                            className="flex h-9 w-9 items-center justify-center rounded-full border border-[#2b211d]/10 bg-[#f2e7d8] text-lg text-[#201813]"
+                            className="flex h-8 w-8 items-center justify-center rounded-full border border-[#2b211d]/10 bg-[#f2e7d8] text-base text-[#201813] sm:h-9 sm:w-9"
                         >
                             →
                         </button>
@@ -95,22 +95,22 @@ const EventOrganisasi = () => {
                     onPointerCancel={endDrag}
                     className={`overflow-x-auto pb-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden ${dragging ? "cursor-grabbing" : "cursor-grab"}`}
                 >
-                    <div className="flex min-w-max gap-5 px-1">
+                    <div className="flex min-w-max gap-4 px-1 sm:gap-5">
                         {eventList.map((item, index) => (
                             <article
                                 key={item.title}
-                                className="group w-[280px] shrink-0 rounded-[26px] border border-[#2b211d]/10 bg-[#f3e8d8] p-3 shadow-[0_18px_30px_rgba(40,26,20,0.06)] transition hover:-translate-y-1 hover:shadow-[0_22px_40px_rgba(40,26,20,0.1)] sm:w-[320px]"
+                                className="group w-[240px] shrink-0 rounded-[26px] border border-[#2b211d]/10 bg-[#f3e8d8] p-3 shadow-[0_18px_30px_rgba(40,26,20,0.06)] transition hover:-translate-y-1 hover:shadow-[0_22px_40px_rgba(40,26,20,0.1)] sm:w-[280px] lg:w-[320px]"
                             >
                                 <div className="relative overflow-hidden rounded-[20px] border border-[#2b211d]/10 bg-[#d9b792]">
                                     <div
-                                        className="relative h-[320px] w-full transition duration-300 group-hover:scale-[1.02]"
+                                        className="relative h-[260px] w-full transition duration-300 group-hover:scale-[1.02] sm:h-[300px] lg:h-[320px]"
                                         style={{ transform: `rotate(${item.rotation}deg)` }}
                                     >
                                         <Image
                                             src={item.image}
                                             alt={item.title}
                                             fill
-                                            sizes="(max-width: 768px) 280px, 320px"
+                                            sizes="(max-width: 768px) 240px, (max-width: 1024px) 280px, 320px"
                                             className="object-cover"
                                         />
                                     </div>
@@ -124,7 +124,7 @@ const EventOrganisasi = () => {
                                     <p className="text-[0.56rem] font-medium uppercase tracking-[0.22em] text-[#7a645d]">
                                         {item.meta}
                                     </p>
-                                    <h3 className="mt-2 text-xl font-semibold tracking-[-0.05em] text-[#201813]">
+                                    <h3 className="mt-2 text-lg font-semibold tracking-[-0.05em] text-[#201813] sm:text-xl">
                                         {item.title}
                                     </h3>
                                 </div>
