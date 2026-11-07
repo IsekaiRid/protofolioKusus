@@ -22,7 +22,7 @@ const tools: Tool[] = [
 
 const SofwareSkillSelectionProfile = () => {
     return (
-        <section className="px-4 py-10 sm:px-6 lg:px-8">
+        <section id="skills" className="px-4 py-10 sm:px-6 lg:px-8 scroll-mt-24">
             <div className="mx-auto max-w-6xl rounded-[30px] border border-[#2b211d]/10 bg-[#f8f3ea] p-6 shadow-[0_20px_80px_rgba(40,26,20,0.08)] sm:p-8 lg:p-10">
                 <div className="mb-8 flex items-end justify-between gap-4">
                     <div>

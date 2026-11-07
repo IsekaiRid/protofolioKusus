@@ -9,7 +9,7 @@ const strengths = [
 
 const AboutSelectionProfile = () => {
     return (
-        <section className="px-4 py-10 sm:px-6 lg:px-8">
+        <section id="about" className="px-4 py-10 sm:px-6 lg:px-8 scroll-mt-24">
             <div className="paper-shell mx-auto max-w-6xl rounded-[28px] border border-[#2b211d]/10 p-6 shadow-[0_20px_80px_rgba(40,26,20,0.08)] sm:p-8 lg:p-10">
                 <div className="grid items-center gap-8 lg:grid-cols-[0.85fr_1.15fr]">
                     <div className="space-y-5">

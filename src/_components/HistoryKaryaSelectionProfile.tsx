@@ -60,7 +60,7 @@ const HistoryKaryaSelectionProfile = () => {
     };
 
     return (
-        <section className="px-4 py-10 sm:px-6 lg:px-8">
+        <section id="works" className="px-4 py-10 sm:px-6 lg:px-8 scroll-mt-24">
             <style>{`
                 @keyframes clothesline-swing {
                     0%, 100% { transform: rotate(calc(var(--r) - 1.8deg)); }

@@ -4,7 +4,7 @@ const skills = ["Designer", "Programmer", "Creative Developer", "Game & Robotics
 
 const HeroSelectionProfile = () => {
     return (
-        <main className="w-full px-0 pt-12 sm:pt-14 lg:pt-16">
+        <main id="home" className="w-full px-0 pt-12 sm:pt-14 lg:pt-16 scroll-mt-24">
             <section className="paper-shell relative flex min-h-[64vh] w-full items-center overflow-hidden border-0">
                 <div className="relative z-10 grid w-full items-center gap-6 py-5 sm:gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:gap-4 lg:py-0">
                     <div className="px-4 sm:px-6 lg:pl-12 xl:pl-16">

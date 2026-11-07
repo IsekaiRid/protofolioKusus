@@ -23,7 +23,7 @@ const socials = [
 
 const SosialMedia = () => {
     return (
-        <section className="px-4 pb-12 pt-2 sm:px-6 lg:px-8">
+        <section id="contact" className="px-4 pb-12 pt-2 sm:px-6 lg:px-8 scroll-mt-24">
             <div className="mx-auto max-w-6xl rounded-[28px] border border-[#2b211d]/10 bg-[#f8f3ea] p-6 shadow-[0_20px_80px_rgba(40,26,20,0.08)] sm:p-8">
                 <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
                     <div>
