@@ -1,8 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #efe2d0;
+  --foreground: #1e1916;
+  --paper: #f7f0e5;
+  --paper-deep: #e7d8c0;
+  --ink: #201813;
+  --muted: #665249;
+  --line: rgba(34, 24, 20, 0.12);
+  --accent: #b57a5d;
 }
 
 @theme inline {
@@ -12,15 +18,51 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  background: var(--background);
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.35), transparent 35%),
+    linear-gradient(135deg, #efe5d6 0%, #e8dcc4 100%);
+  color: var(--forground);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body,
+html {
+  overscroll-behavior: none;
+}
+
+.paper-shell {
+  position: relative;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0.05)),
+    var(--paper);
+}
+
+.paper-shell::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(rgba(52, 36, 28, 0.04) 0.8px, transparent 0.8px),
+    radial-gradient(rgba(78, 56, 44, 0.03) 0.8px, transparent 0.8px);
+  background-position: 0 0, 10px 10px;
+  background-size: 18px 18px;
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.glass-card {
+  position: relative;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.38), rgba(255, 255, 255, 0.1));
+}
+
+.font-serif {
+  font-family: "Georgia", "Times New Roman", serif;
 }
